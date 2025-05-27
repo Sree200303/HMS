@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patients</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .form-container input[type="text"], .form-container input[type="number"], .form-container input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Add Patients</h2>
+    <form action="add_patient.php" method="post" enctype="multipart/form-data">
+        <label for="patient_id">Id:</label>
+        <input type="number" name="patient_id" required>
+
+        <label for="patient_name">Name:</label>
+        <input type="text" name="patient_name" required>
+
+        <label for="patient_address">Address:</label>
+        <input type="text" name="patient_address" required>
+
+        <label for="patient_contact">Contact:</label>
+        <input type="number" name="patient_contact" required>
+
+        <input type="submit" value="Add Patient">
+    </form>
+</div>
+
+</body>
+</html>

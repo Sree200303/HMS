@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Person Appointment</title>
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+    <header>
+        <h1>Book In-Person Appointment</h1>
+    </header>
+    <main>
+        <section id="in-person-appointment">
+            <h2>Schedule Your In-Person Appointment</h2>
+
+            <!-- Form for booking an in-person appointment -->
+            <form id="inpersonform" action="inperson.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="number">Register Number:</label>
+                <input type="number" id="reg" name="reg" required>
+                 
+                <label for="doctor_name">Doctor Name:</label>
+                <input type="text" id="dname" name="doctor_name" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

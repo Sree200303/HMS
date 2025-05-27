@@ -1,0 +1,30 @@
+
+h1 {
+    font-family: Monotype Corsiva;
+    font-size: 4rem;
+    color: #2c3e50;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    animation: blink 1s infinite; 
+}
+
+  
+        
+
+
+        .medical-heart-icon {
+            color: #e74c3c; 
+            margin-right: 5px; 
+        }
+
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

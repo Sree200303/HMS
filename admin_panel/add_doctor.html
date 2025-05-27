@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Doctor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .form-container input[type="text"], .form-container input[type="number"], .form-container input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Add Doctor</h2>
+    <form action="add_doctor.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="specialist">Specialist:</label>
+        <input type="text" name="specialist" required>
+
+        <label for="experience">Experience (years):</label>
+        <input type="number" name="experience" required>
+
+        <label for="photo">Photo:</label>
+        <input type="file" name="photo" accept="uploads/" required>
+
+        <input type="submit" value="Add Doctor">
+    </form>
+</div>
+
+</body>
+</html>
